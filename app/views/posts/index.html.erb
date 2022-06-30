@@ -1,6 +1,8 @@
 
-<div class="alert alert-success" style="color: green" role="alert">
-  <%= notice %>
+<% if notice %>
+<div class="alert alert-success text-center"  role="alert">
+  <h4><strong><%= notice %></strong><h4>
+  <% end %>
   
 </div>
 <div class="container">
