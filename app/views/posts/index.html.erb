@@ -1,0 +1,22 @@
+
+<% if notice %>
+<div class="alert alert-success text-center"  role="alert">
+  <h4><strong><%= notice %></strong><h4>
+  <% end %>
+  
+</div>
+<div class="container">
+<h1>Posts</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
+</div>
+
+
+<%= link_to "New post", new_post_path %>
+</div>
